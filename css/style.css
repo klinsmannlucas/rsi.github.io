@@ -11,11 +11,8 @@ html, body{
 	background-color: black;
 }
 
-
-#inicio, #eventos{
-	/*background: url("../img/generic1920x1080.svg");*/
-	background-color: #333;
-	background-size: cover;
+.capa {
+	position: relative;
 	color: white;
 	height: 100%;
 	width: 100%;
@@ -23,13 +20,41 @@ html, body{
 	align-items: center;
 }
 
+.capa .mask{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.50;
+	filter: alpha(opacity=90);
+}
+
+.capa .container{
+	margin: 0 auto;
+	text-align: center;
+	z-index: 2;
+}
+
+#inicio {
+	background: url("../img/main-cover.jpg") center center no-repeat;
+	background-size: cover;
+}
+
 #inicio img{
+	
 	height: 6rem;
 }
 
-#inicio,#eventos .container{
-	margin: 0 auto;
-	text-align: center;
+#eventos {
+	background: url("../img/root-rsi-cover.jpg") center center no-repeat;
+	background-size: cover;
+}
+
+#eventos .btn-outline-light:hover{
+	background-color: transparent;
+	color: white;
 }
 
 #sobre, #servicos, #membros{
@@ -48,11 +73,6 @@ html, body{
 	height: 6em;
 }
 
-#eventos .btn-outline-light:hover{
-	background-color: transparent;
-	color: white;
-}
-
 #contato {
 	padding: 4rem 0 2rem 0;
 	text-align: center;
@@ -66,7 +86,7 @@ html, body{
 	color: white;
 	text-align: center;
 	background-color: #333;
-	padding: 0.8em 0 0.3em 0;
+	padding: 2em 0 1em 0;
 }
 
 @media (max-width: 576px){
