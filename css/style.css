@@ -1,0 +1,77 @@
+html, body{
+	height: 100%;
+	max-width: 100%;
+}
+
+.btn-outline-light:hover {
+	color: black;
+}
+
+.btn-outline-dark:hover {
+	background-color: black;
+}
+
+
+#inicio, #eventos{
+	/*background: url("../img/generic1920x1080.svg");*/
+	background-color: #333;
+	background-size: cover;
+	color: white;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#inicio img{
+	height: 6rem;
+}
+
+#inicio,#eventos .container{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#sobre, #servicos, #membros{
+	padding: 6rem 0 6rem 0;
+	text-align: center;
+}
+
+#sobre img{
+	margin-top: 4em;
+	margin-bottom: 4em;
+	height: 10em;
+}
+
+#servicos img{
+	margin: 5em 0 2em 0;
+	height: 6em;
+}
+
+#eventos .btn-outline-light:hover{
+	background-color: transparent;
+	color: white;
+}
+
+#contato {
+	padding: 4rem 0 2rem 0;
+	text-align: center;
+}
+
+#contato a{
+	color: black;
+}
+
+#footer {
+	color: white;
+	text-align: center;
+	background-color: #333;
+	padding: 0.8em 0 0.3em 0;
+}
+
+@media (max-width: 576px){
+	.display-1, .display-3{
+		font-size: 3em;
+	}
+}
+
